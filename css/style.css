@@ -1,0 +1,89 @@
+/* =============================================================================================== */
+.slick-prev {
+  position: relative;
+  z-index: 100;
+}
+.slick-prev:before {
+  z-index: 100;
+  color: #37B865;
+  content: '◀';
+  position: absolute;
+  left: 30px;
+}
+.slick-next {
+  position: relative;
+  z-index: 100;
+  top: -213px;
+  right: -725px;
+}
+.slick-next:before {
+  z-index: 100;
+  color: #37B865;
+  content: '▶';
+  position: absolute;
+}
+/* =============================================================================================== */
+.slick-dots li button:before{
+    font-family: slick;
+    font-size: 40px;
+    font-weight: 1000;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    content: '_';
+    text-align: center;
+    opacity: .25;
+    color: #adceff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before{
+    opacity: .75;
+    color: #37B865;
+}
+/* =============================================================================================== */
+.prev{
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.prev:hover{
+  color: #000000;
+}
+.next:hover{
+  color: #000000;
+}
+.next{
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  position: absolute;
+  bottom: 50%;
+  right: -30px;
+  transform: translateY(50%);
+}
+/* =============================================================================================== */
+.hover_effect{
+  position: relative;
+}
+.star_hover_effect{
+  opacity: 0;
+  transition: 0.6s;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hover_effect:hover .star_hover_effect{
+  opacity: 1;
+}
+.hover_effect:hover .text_hover_effect{
+  opacity: 0;
+}
+/* =============================================================================================== */
